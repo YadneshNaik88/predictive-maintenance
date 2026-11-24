@@ -1,0 +1,14 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Simulation Decision Logs (Large files > 5MB)
+outputs/decision_log_full.jsonl
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+

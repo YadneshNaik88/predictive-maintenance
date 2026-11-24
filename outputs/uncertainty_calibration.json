@@ -1,0 +1,9 @@
+{
+    "k_factor": 7.2327,
+    "target_level": 0.9,
+    "fitted_on": "all_validation_windows",
+    "num_val_sequences": 3272,
+    "val_all_raw_90_coverage": 0.4428,
+    "spearman_rho_val": -0.2974,
+    "spearman_rho_test": -0.1266
+}

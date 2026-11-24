@@ -1,0 +1,71 @@
+{
+    "method": "binned_residual",
+    "target_nominal_level": 0.9,
+    "bin_edges": [
+        0.0,
+        25.0,
+        50.0,
+        75.0,
+        100.0,
+        125.0
+    ],
+    "num_val_samples": 3272,
+    "validation_empirical_coverage": 0.8985,
+    "bins": [
+        {
+            "bin_idx": 0,
+            "edge_lower": 0.0,
+            "edge_upper": 25.0,
+            "count": 516,
+            "mean_residual": 1.2206393480300903,
+            "std_residual": 2.740492105484009,
+            "q05": -2.9451417922973633,
+            "q95": 6.532902717590332,
+            "raw_width": 9.478044509887695
+        },
+        {
+            "bin_idx": 1,
+            "edge_lower": 25.0,
+            "edge_upper": 50.0,
+            "count": 456,
+            "mean_residual": 1.6225626468658447,
+            "std_residual": 6.247381210327148,
+            "q05": -9.051321983337402,
+            "q95": 13.085686683654785,
+            "raw_width": 22.137008666992188
+        },
+        {
+            "bin_idx": 2,
+            "edge_lower": 50.0,
+            "edge_upper": 75.0,
+            "count": 425,
+            "mean_residual": -0.17643511295318604,
+            "std_residual": 12.713604927062988,
+            "q05": -21.157733917236328,
+            "q95": 21.718975067138672,
+            "raw_width": 42.876708984375
+        },
+        {
+            "bin_idx": 3,
+            "edge_lower": 75.0,
+            "edge_upper": 100.0,
+            "count": 473,
+            "mean_residual": -1.7176663875579834,
+            "std_residual": 19.33580207824707,
+            "q05": -30.16275978088379,
+            "q95": 32.0221061706543,
+            "raw_width": 62.184865951538086
+        },
+        {
+            "bin_idx": 4,
+            "edge_lower": 100.0,
+            "edge_upper": 125.0,
+            "count": 1402,
+            "mean_residual": -2.396728754043579,
+            "std_residual": 13.616863250732422,
+            "q05": -30.43575096130371,
+            "q95": 13.529840469360352,
+            "raw_width": 43.96559143066406
+        }
+    ]
+}

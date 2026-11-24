@@ -1,0 +1,118 @@
+===========================================================================
+NASA C-MAPSS FD001 - EXPLORATORY DATA ANALYSIS SUMMARY
+===========================================================================
+Training Instances:    20,631 rows
+Test Instances:        13,096 rows
+Training Engines:      100
+Test Engines:          100
+Features:              26 (2 Index, 3 Op Settings, 21 Sensors)
+
+---------------------------------------------------------------------------
+1. ENGINE LIFECYCLE STATISTICS (100 Training Engines)
+---------------------------------------------------------------------------
+  Count:  100
+  Mean:   206.31 cycles
+  Std:    46.34 cycles
+  Min:    128 cycles (Unit 39)
+  25%:    177.0 cycles
+  50%:    199.0 cycles (Median)
+  75%:    229.2 cycles
+  Max:    362 cycles (Unit 69)
+
+---------------------------------------------------------------------------
+2. SENSOR VARIANCE ANALYSIS & FEATURE SCREENING
+---------------------------------------------------------------------------
+  Total Sensor Columns: 21
+  Zero / Near-Zero Variance Sensors (7): sensor_measurement_1, sensor_measurement_5, sensor_measurement_6, sensor_measurement_10, sensor_measurement_16, sensor_measurement_18, sensor_measurement_19
+  Informative Variance Sensors (14):     sensor_measurement_2, sensor_measurement_3, sensor_measurement_4, sensor_measurement_7, sensor_measurement_8, sensor_measurement_9, sensor_measurement_11, sensor_measurement_12, sensor_measurement_13, sensor_measurement_14, sensor_measurement_15, sensor_measurement_17, sensor_measurement_20, sensor_measurement_21
+
+  Detailed Sensor Variance Table:
+  Sensor                    Variance         Std Dev        Status
+  sensor_measurement_1      0.000000e+00     0.000000       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_2      2.500533e-01     0.500053       Informative Feature
+  sensor_measurement_3      3.759099e+01     6.131150       Informative Feature
+  sensor_measurement_4      8.101089e+01     9.000605       Informative Feature
+  sensor_measurement_5      2.840037e-29     0.000000       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_6      1.929279e-06     0.001389       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_7      7.833883e-01     0.885092       Informative Feature
+  sensor_measurement_8      5.038938e-03     0.070985       Informative Feature
+  sensor_measurement_9      4.876536e+02     22.082880      Informative Feature
+  sensor_measurement_10     0.000000e+00     0.000000       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_11     7.133568e-02     0.267087       Informative Feature
+  sensor_measurement_12     5.439850e-01     0.737553       Informative Feature
+  sensor_measurement_13     5.172330e-03     0.071919       Informative Feature
+  sensor_measurement_14     3.639005e+02     19.076176      Informative Feature
+  sensor_measurement_15     1.406628e-03     0.037505       Informative Feature
+  sensor_measurement_16     1.203765e-35     0.000000       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_17     2.398667e+00     1.548763       Informative Feature
+  sensor_measurement_18     0.000000e+00     0.000000       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_19     0.000000e+00     0.000000       Zero / Near-Zero Variance (Candidate to Drop)
+  sensor_measurement_20     3.266927e-02     0.180746       Informative Feature
+  sensor_measurement_21     1.171825e-02     0.108251       Informative Feature
+
+---------------------------------------------------------------------------
+3. RUL DISTRIBUTION STATISTICS (Row-Level Ground Truth)
+---------------------------------------------------------------------------
+  Total Observations: 20,631
+  Mean RUL:           107.81 cycles
+  Std RUL:            68.88 cycles
+  Min RUL:            0 cycles (Engine failure point)
+  25% Quantile:       51.0 cycles
+  50% (Median):       103.0 cycles
+  75% Quantile:       155.0 cycles
+  Max RUL:            361 cycles
+
+---------------------------------------------------------------------------
+4. EARLY-LIFE (<=10%) vs LATE-LIFE (>=90%) SENSOR COMPARISON
+---------------------------------------------------------------------------
+  Sensor                   Early Mean     Late Mean      Abs Shift    % Change     Z-Shift
+  sensor_measurement_1     518.6700       518.6700       0.0000       +0.00      % +0.00   sigma
+  sensor_measurement_2     642.3715       643.4730       1.1015       +0.17      % +2.20   sigma
+  sensor_measurement_3     1586.7107      1599.9772      13.2665      +0.84      % +2.16   sigma
+  sensor_measurement_4     1402.5374      1424.8356      22.2982      +1.59      % +2.48   sigma
+  sensor_measurement_5     14.6200        14.6200        -0.0000      -0.00      % -0.00   sigma
+  sensor_measurement_6     21.6095        21.6100        0.0005       +0.00      % +0.36   sigma
+  sensor_measurement_7     553.9742       551.8613       -2.1129      -0.38      % -2.39   sigma
+  sensor_measurement_8     2388.0562      2388.2007      0.1445       +0.01      % +2.04   sigma
+  sensor_measurement_9     9056.1147      9092.1388      36.0241      +0.40      % +1.63   sigma
+  sensor_measurement_10    1.3000         1.3000         0.0000       +0.00      % +0.00   sigma
+  sensor_measurement_11    47.3468        48.0255        0.6787       +1.43      % +2.54   sigma
+  sensor_measurement_12    521.9300       520.1309       -1.7991      -0.34      % -2.44   sigma
+  sensor_measurement_13    2388.0541      2388.2011      0.1469       +0.01      % +2.04   sigma
+  sensor_measurement_14    8137.5787      8162.9359      25.3572      +0.31      % +1.33   sigma
+  sensor_measurement_15    8.4172         8.5055         0.0883       +1.05      % +2.36   sigma
+  sensor_measurement_16    0.0300         0.0300         -0.0000      -0.00      % -0.00   sigma
+  sensor_measurement_17    392.2464       395.6764       3.4300       +0.87      % +2.21   sigma
+  sensor_measurement_18    2388.0000      2388.0000      0.0000       +0.00      % +0.00   sigma
+  sensor_measurement_19    100.0000       100.0000       0.0000       +0.00      % +0.00   sigma
+  sensor_measurement_20    38.9367        38.5215        -0.4152      -1.07      % -2.30   sigma
+  sensor_measurement_21    23.3630        23.1110        -0.2520      -1.08      % -2.33   sigma
+
+---------------------------------------------------------------------------
+5. FEATURE CORRELATION RANKING WITH RUL
+---------------------------------------------------------------------------
+  Rank   Feature                    Correlation with RUL   Interpretation
+  1      sensor_measurement_11      -0.6962                Strong Negative (Increases toward failure)
+  2      sensor_measurement_4       -0.6789                Strong Negative (Increases toward failure)
+  3      sensor_measurement_12      +0.6720                Strong Positive (Decreases toward failure)
+  4      sensor_measurement_7       +0.6572                Strong Positive (Decreases toward failure)
+  5      sensor_measurement_15      -0.6427                Strong Negative (Increases toward failure)
+  6      sensor_measurement_21      +0.6357                Strong Positive (Decreases toward failure)
+  7      sensor_measurement_20      +0.6294                Strong Positive (Decreases toward failure)
+  8      sensor_measurement_2       -0.6065                Strong Negative (Increases toward failure)
+  9      sensor_measurement_17      -0.6062                Strong Negative (Increases toward failure)
+  10     sensor_measurement_3       -0.5845                Strong Negative (Increases toward failure)
+  11     sensor_measurement_8       -0.5640                Strong Negative (Increases toward failure)
+  12     sensor_measurement_13      -0.5626                Strong Negative (Increases toward failure)
+  13     sensor_measurement_9       -0.3901                Weak / Low Sensitivity
+  14     sensor_measurement_14      -0.3068                Weak / Low Sensitivity
+  15     sensor_measurement_6       -0.1283                Weak / Low Sensitivity
+  16     operational_setting_1      -0.0032                Weak / Low Sensitivity
+  17     operational_setting_2      -0.0019                Weak / Low Sensitivity
+  18     sensor_measurement_5       +0.0000                Weak / Low Sensitivity
+  19     sensor_measurement_16      -0.0000                Weak / Low Sensitivity
+  20     sensor_measurement_1       NaN                    Constant / Zero Variance
+  21     sensor_measurement_10      NaN                    Constant / Zero Variance
+  22     sensor_measurement_18      NaN                    Constant / Zero Variance
+  23     sensor_measurement_19      NaN                    Constant / Zero Variance
+  24     operational_setting_3      NaN                    Constant / Zero Variance

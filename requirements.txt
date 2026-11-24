@@ -1,0 +1,16 @@
+pandas
+numpy
+matplotlib
+seaborn
+torch
+scikit-learn
+joblib
+nbformat
+streamlit
+scipy
+pyyaml
+pytest
+langchain-core==1.8.4
+langgraph==1.2.9
+langchain-groq==1.1.3
+python-dotenv==1.2.2
